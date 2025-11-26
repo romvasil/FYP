@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+env/
+.env
+.venv/
+
+# Data - NEVER commit large datasets to Git
+data/
+*.mp4
+*.wav
+*.csv
+*.npy
+*.h5
+*.pth
+
+# IDE settings
+.vscode/
+.idea/
+.DS_Store
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
