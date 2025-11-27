@@ -3,24 +3,20 @@ import zipfile
 import glob
 import pandas as pd
 
-# --- PATHS ---
-# We use '..' to go up one level from 'src' to the main folder
 RAW_PATH = os.path.join(os.path.dirname(__file__), '..', 'DataSetsRaw')
 EXTRACT_PATH = os.path.join(RAW_PATH, 'AGAIN_Extracted')
 
 def inspect_again():
     print("--- INSPECTING AGAIN DATASET ---")
     
-    # 1. Find the zip file automatically
     zip_files = glob.glob(os.path.join(RAW_PATH, "*.zip"))
     if not zip_files:
         print(f"ERROR: No .zip file found in {RAW_PATH}")
         return
     
-    zip_file_path = zip_files[0] # Take the first zip found
+    zip_file_path = zip_files[0]
     print(f"Found zip file: {os.path.basename(zip_file_path)}")
     
-    # 2. Unzip it
     if not os.path.exists(EXTRACT_PATH):
         print(f"Unzipping to {EXTRACT_PATH}...")
         with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
@@ -28,16 +24,14 @@ def inspect_again():
     else:
         print("Folder already unzipped. Skipping extraction.")
         
-    # 3. Find a CSV inside and check columns
     csv_files = glob.glob(os.path.join(EXTRACT_PATH, "**", "*.csv"), recursive=True)
     if csv_files:
         first_csv = csv_files[0]
         print(f"Reading file: {os.path.basename(first_csv)}")
-        df = pd.read_csv(first_csv, nrows=5) # Read only 5 rows
+        df = pd.read_csv(first_csv, nrows=5)
         print("COLUMNS FOUND:")
         print(df.columns.tolist())
         
-        # Check for specific game info
         if 'game' in df.columns:
             print(f"Game Column found: {df['game'].unique()}")
     else:
