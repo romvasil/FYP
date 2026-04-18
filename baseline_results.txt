@@ -16,3 +16,5 @@ AGAIN_arousal_reg_LSTM: CCC = 0.4430
 AGAIN_arousal_class_Linear: Acc = 0.3730
 AGAIN_arousal_class_MLP: Acc = 0.3961
 AGAIN_arousal_class_LSTM: Acc = 0.3913
+continuous values for valence check
+lower or above than the median 
