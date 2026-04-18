@@ -1,0 +1,5 @@
+baseline:
+continuous values for valence check
+lower or above than the median 
+mse root mean se
+

@@ -1,0 +1,149 @@
+==================================================
+Evaluating RECOLA - arousal - REG
+==================================================
+
+--- Model: Linear ---
+Confidence 99% (alpha=0.01): Average Interval Width = 0.8831
+Confidence 95% (alpha=0.05): Average Interval Width = 0.7058
+Confidence 90% (alpha=0.1): Average Interval Width = 0.5931
+Confidence 80% (alpha=0.2): Average Interval Width = 0.4862
+Confidence 60% (alpha=0.4): Average Interval Width = 0.3337
+
+--- Model: MLP ---
+Confidence 99% (alpha=0.01): Average Interval Width = 0.8997
+Confidence 95% (alpha=0.05): Average Interval Width = 0.6998
+Confidence 90% (alpha=0.1): Average Interval Width = 0.5851
+Confidence 80% (alpha=0.2): Average Interval Width = 0.4665
+Confidence 60% (alpha=0.4): Average Interval Width = 0.3217
+
+--- Model: LSTM ---
+Confidence 99% (alpha=0.01): Average Interval Width = 0.9182
+Confidence 95% (alpha=0.05): Average Interval Width = 0.7133
+Confidence 90% (alpha=0.1): Average Interval Width = 0.6061
+Confidence 80% (alpha=0.2): Average Interval Width = 0.4764
+Confidence 60% (alpha=0.4): Average Interval Width = 0.3178
+
+==================================================
+Evaluating RECOLA - valence - REG
+==================================================
+
+--- Model: Linear ---
+Confidence 99% (alpha=0.01): Average Interval Width = 0.7139
+Confidence 95% (alpha=0.05): Average Interval Width = 0.5818
+Confidence 90% (alpha=0.1): Average Interval Width = 0.4619
+Confidence 80% (alpha=0.2): Average Interval Width = 0.3454
+Confidence 60% (alpha=0.4): Average Interval Width = 0.2222
+
+--- Model: MLP ---
+Confidence 99% (alpha=0.01): Average Interval Width = 0.8119
+Confidence 95% (alpha=0.05): Average Interval Width = 0.5708
+Confidence 90% (alpha=0.1): Average Interval Width = 0.4462
+Confidence 80% (alpha=0.2): Average Interval Width = 0.3280
+Confidence 60% (alpha=0.4): Average Interval Width = 0.2174
+
+--- Model: LSTM ---
+Confidence 99% (alpha=0.01): Average Interval Width = 0.8367
+Confidence 95% (alpha=0.05): Average Interval Width = 0.6374
+Confidence 90% (alpha=0.1): Average Interval Width = 0.5206
+Confidence 80% (alpha=0.2): Average Interval Width = 0.3911
+Confidence 60% (alpha=0.4): Average Interval Width = 0.2474
+
+==================================================
+Evaluating RECOLA - arousal - CLASS
+==================================================
+
+--- Model: Linear ---
+Confidence 99% (alpha=0.01): Average Set Size = 4.70 classes
+Confidence 95% (alpha=0.05): Average Set Size = 4.23 classes
+Confidence 90% (alpha=0.1): Average Set Size = 3.87 classes
+Confidence 80% (alpha=0.2): Average Set Size = 3.22 classes
+Confidence 60% (alpha=0.4): Average Set Size = 2.22 classes
+
+--- Model: MLP ---
+Confidence 99% (alpha=0.01): Average Set Size = 4.85 classes
+Confidence 95% (alpha=0.05): Average Set Size = 4.09 classes
+Confidence 90% (alpha=0.1): Average Set Size = 3.61 classes
+Confidence 80% (alpha=0.2): Average Set Size = 3.03 classes
+Confidence 60% (alpha=0.4): Average Set Size = 2.02 classes
+
+--- Model: LSTM ---
+Confidence 99% (alpha=0.01): Average Set Size = 4.80 classes
+Confidence 95% (alpha=0.05): Average Set Size = 4.09 classes
+Confidence 90% (alpha=0.1): Average Set Size = 3.59 classes
+Confidence 80% (alpha=0.2): Average Set Size = 3.01 classes
+Confidence 60% (alpha=0.4): Average Set Size = 2.02 classes
+
+==================================================
+Evaluating RECOLA - valence - CLASS
+==================================================
+
+--- Model: Linear ---
+Confidence 99% (alpha=0.01): Average Set Size = 4.87 classes
+Confidence 95% (alpha=0.05): Average Set Size = 4.62 classes
+Confidence 90% (alpha=0.1): Average Set Size = 4.27 classes
+Confidence 80% (alpha=0.2): Average Set Size = 3.73 classes
+Confidence 60% (alpha=0.4): Average Set Size = 2.68 classes
+
+--- Model: MLP ---
+Confidence 99% (alpha=0.01): Average Set Size = 4.91 classes
+Confidence 95% (alpha=0.05): Average Set Size = 4.61 classes
+Confidence 90% (alpha=0.1): Average Set Size = 4.24 classes
+Confidence 80% (alpha=0.2): Average Set Size = 3.67 classes
+Confidence 60% (alpha=0.4): Average Set Size = 2.62 classes
+
+--- Model: LSTM ---
+Confidence 99% (alpha=0.01): Average Set Size = 4.91 classes
+Confidence 95% (alpha=0.05): Average Set Size = 4.70 classes
+Confidence 90% (alpha=0.1): Average Set Size = 4.42 classes
+Confidence 80% (alpha=0.2): Average Set Size = 3.85 classes
+Confidence 60% (alpha=0.4): Average Set Size = 2.71 classes
+
+==================================================
+Evaluating AGAIN - arousal - REG
+==================================================
+
+--- Model: Linear ---
+Confidence 99% (alpha=0.01): Average Interval Width = 1.2286
+Confidence 95% (alpha=0.05): Average Interval Width = 0.9285
+Confidence 90% (alpha=0.1): Average Interval Width = 0.7913
+Confidence 80% (alpha=0.2): Average Interval Width = 0.6285
+Confidence 60% (alpha=0.4): Average Interval Width = 0.4506
+
+--- Model: MLP ---
+Confidence 99% (alpha=0.01): Average Interval Width = 1.3087
+Confidence 95% (alpha=0.05): Average Interval Width = 0.9477
+Confidence 90% (alpha=0.1): Average Interval Width = 0.7953
+Confidence 80% (alpha=0.2): Average Interval Width = 0.6270
+Confidence 60% (alpha=0.4): Average Interval Width = 0.4405
+
+--- Model: LSTM ---
+Confidence 99% (alpha=0.01): Average Interval Width = 1.3516
+Confidence 95% (alpha=0.05): Average Interval Width = 0.9788
+Confidence 90% (alpha=0.1): Average Interval Width = 0.8221
+Confidence 80% (alpha=0.2): Average Interval Width = 0.6479
+Confidence 60% (alpha=0.4): Average Interval Width = 0.4392
+
+==================================================
+Evaluating AGAIN - arousal - CLASS
+==================================================
+
+--- Model: Linear ---
+Confidence 99% (alpha=0.01): Average Set Size = 4.79 classes
+Confidence 95% (alpha=0.05): Average Set Size = 4.13 classes
+Confidence 90% (alpha=0.1): Average Set Size = 3.63 classes
+Confidence 80% (alpha=0.2): Average Set Size = 2.87 classes
+Confidence 60% (alpha=0.4): Average Set Size = 1.89 classes
+
+--- Model: MLP ---
+Confidence 99% (alpha=0.01): Average Set Size = 4.76 classes
+Confidence 95% (alpha=0.05): Average Set Size = 4.14 classes
+Confidence 90% (alpha=0.1): Average Set Size = 3.57 classes
+Confidence 80% (alpha=0.2): Average Set Size = 2.80 classes
+Confidence 60% (alpha=0.4): Average Set Size = 1.75 classes
+
+--- Model: LSTM ---
+Confidence 99% (alpha=0.01): Average Set Size = 4.78 classes
+Confidence 95% (alpha=0.05): Average Set Size = 4.18 classes
+Confidence 90% (alpha=0.1): Average Set Size = 3.59 classes
+Confidence 80% (alpha=0.2): Average Set Size = 2.85 classes
+Confidence 60% (alpha=0.4): Average Set Size = 1.78 classes
