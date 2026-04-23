@@ -1,4 +1,5 @@
 import os
+import math
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -52,6 +53,8 @@ def train_model(run_name, dataset, target, task, ModelClass):
     criterion = nn.MSELoss() if task == 'reg' else nn.CrossEntropyLoss()
     
     best_score = -999.0
+    best_mse = 999.0
+    best_rmse = 999.0
     
     print(f"Training {run_name}...")
     
@@ -74,15 +77,24 @@ def train_model(run_name, dataset, target, task, ModelClass):
             val_out = model(X_val)
             if task == 'reg':
                 score = calculate_ccc(y_val, val_out).item()
+                current_mse = nn.functional.mse_loss(val_out, y_val).item()
+                current_rmse = math.sqrt(current_mse)
             else:
                 predictions = torch.argmax(val_out, dim=1)
                 score = (predictions == y_val).float().mean().item()
         
         if score > best_score:
             best_score = score
+            if task == 'reg':
+                best_mse = current_mse
+                best_rmse = current_rmse
             torch.save(model.state_dict(), f"{MODELS_PATH}/{run_name}.pth")
 
-    result_string = f"{run_name}: {'CCC' if task == 'reg' else 'Acc'} = {best_score:.4f}"
+    if task == 'reg':
+        result_string = f"{run_name}: CCC = {best_score:.4f} | MSE = {best_mse:.4f} | RMSE = {best_rmse:.4f}"
+    else:
+        result_string = f"{run_name}: Acc = {best_score:.4f}"
+        
     print(result_string)
     with open(RESULTS_FILE, "a") as f:
         f.write(result_string + "\n")

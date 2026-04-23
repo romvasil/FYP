@@ -78,7 +78,9 @@ def evaluate_conformal():
                     intervals = cr.predict_int(test_preds, confidence=1 - alpha)
                     
                     avg_width = np.mean(intervals[:, 1] - intervals[:, 0])
-                    print(f"Confidence {conf_level:.0f}% (alpha={alpha}): Average Interval Width = {avg_width:.4f}")
+                    coverage = np.mean((y_test >= intervals[:, 0]) & (y_test <= intervals[:, 1]))
+                    
+                    print(f"Confidence {conf_level:.0f}% (alpha={alpha}): Empirical Coverage = {coverage*100:.2f}% | Average Interval Width = {avg_width:.4f}")
                     
             else:
                 classes = np.array([0, 1, 2, 3, 4])
@@ -94,7 +96,9 @@ def evaluate_conformal():
                     prediction_sets = cc.predict_set(alphas_test, confidence=1 - alpha)
                     
                     avg_set_size = np.mean(np.sum(prediction_sets, axis=1))
-                    print(f"Confidence {conf_level:.0f}% (alpha={alpha}): Average Set Size = {avg_set_size:.2f} classes")
+                    coverage = np.mean([prediction_sets[i, int(y_test[i])] for i in range(len(y_test))])
+                    
+                    print(f"Confidence {conf_level:.0f}% (alpha={alpha}): Empirical Coverage = {coverage*100:.2f}% | Average Set Size = {avg_set_size:.2f} classes")
 
 if __name__ == "__main__":
     evaluate_conformal()
