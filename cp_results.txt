@@ -3,147 +3,147 @@ Evaluating RECOLA - arousal - REG
 ==================================================
 
 --- Model: Linear ---
-Confidence 99% (alpha=0.01): Average Interval Width = 0.8831
-Confidence 95% (alpha=0.05): Average Interval Width = 0.7058
-Confidence 90% (alpha=0.1): Average Interval Width = 0.5931
-Confidence 80% (alpha=0.2): Average Interval Width = 0.4862
-Confidence 60% (alpha=0.4): Average Interval Width = 0.3337
+Confidence 99% (alpha=0.01): Empirical Coverage = 99.90% | Average Interval Width = 0.8802
+Confidence 95% (alpha=0.05): Empirical Coverage = 97.89% | Average Interval Width = 0.7012
+Confidence 90% (alpha=0.1): Empirical Coverage = 92.80% | Average Interval Width = 0.5936
+Confidence 80% (alpha=0.2): Empirical Coverage = 83.79% | Average Interval Width = 0.4822
+Confidence 60% (alpha=0.4): Empirical Coverage = 63.94% | Average Interval Width = 0.3325
 
 --- Model: MLP ---
-Confidence 99% (alpha=0.01): Average Interval Width = 0.8997
-Confidence 95% (alpha=0.05): Average Interval Width = 0.6998
-Confidence 90% (alpha=0.1): Average Interval Width = 0.5851
-Confidence 80% (alpha=0.2): Average Interval Width = 0.4665
-Confidence 60% (alpha=0.4): Average Interval Width = 0.3217
+Confidence 99% (alpha=0.01): Empirical Coverage = 99.86% | Average Interval Width = 0.8996
+Confidence 95% (alpha=0.05): Empirical Coverage = 96.78% | Average Interval Width = 0.6984
+Confidence 90% (alpha=0.1): Empirical Coverage = 93.38% | Average Interval Width = 0.6026
+Confidence 80% (alpha=0.2): Empirical Coverage = 84.83% | Average Interval Width = 0.4695
+Confidence 60% (alpha=0.4): Empirical Coverage = 67.44% | Average Interval Width = 0.3204
 
 --- Model: LSTM ---
-Confidence 99% (alpha=0.01): Average Interval Width = 0.9182
-Confidence 95% (alpha=0.05): Average Interval Width = 0.7133
-Confidence 90% (alpha=0.1): Average Interval Width = 0.6061
-Confidence 80% (alpha=0.2): Average Interval Width = 0.4764
-Confidence 60% (alpha=0.4): Average Interval Width = 0.3178
+Confidence 99% (alpha=0.01): Empirical Coverage = 99.72% | Average Interval Width = 0.8323
+Confidence 95% (alpha=0.05): Empirical Coverage = 97.33% | Average Interval Width = 0.6903
+Confidence 90% (alpha=0.1): Empirical Coverage = 91.96% | Average Interval Width = 0.5780
+Confidence 80% (alpha=0.2): Empirical Coverage = 83.37% | Average Interval Width = 0.4667
+Confidence 60% (alpha=0.4): Empirical Coverage = 65.33% | Average Interval Width = 0.3219
 
 ==================================================
 Evaluating RECOLA - valence - REG
 ==================================================
 
 --- Model: Linear ---
-Confidence 99% (alpha=0.01): Average Interval Width = 0.7139
-Confidence 95% (alpha=0.05): Average Interval Width = 0.5818
-Confidence 90% (alpha=0.1): Average Interval Width = 0.4619
-Confidence 80% (alpha=0.2): Average Interval Width = 0.3454
-Confidence 60% (alpha=0.4): Average Interval Width = 0.2222
+Confidence 99% (alpha=0.01): Empirical Coverage = 99.97% | Average Interval Width = 0.7349
+Confidence 95% (alpha=0.05): Empirical Coverage = 99.20% | Average Interval Width = 0.5857
+Confidence 90% (alpha=0.1): Empirical Coverage = 97.02% | Average Interval Width = 0.4603
+Confidence 80% (alpha=0.2): Empirical Coverage = 91.65% | Average Interval Width = 0.3445
+Confidence 60% (alpha=0.4): Empirical Coverage = 76.62% | Average Interval Width = 0.2283
 
 --- Model: MLP ---
-Confidence 99% (alpha=0.01): Average Interval Width = 0.8119
-Confidence 95% (alpha=0.05): Average Interval Width = 0.5708
-Confidence 90% (alpha=0.1): Average Interval Width = 0.4462
-Confidence 80% (alpha=0.2): Average Interval Width = 0.3280
-Confidence 60% (alpha=0.4): Average Interval Width = 0.2174
+Confidence 99% (alpha=0.01): Empirical Coverage = 99.97% | Average Interval Width = 0.7654
+Confidence 95% (alpha=0.05): Empirical Coverage = 98.72% | Average Interval Width = 0.5701
+Confidence 90% (alpha=0.1): Empirical Coverage = 95.39% | Average Interval Width = 0.4420
+Confidence 80% (alpha=0.2): Empirical Coverage = 90.13% | Average Interval Width = 0.3255
+Confidence 60% (alpha=0.4): Empirical Coverage = 74.78% | Average Interval Width = 0.2141
 
 --- Model: LSTM ---
-Confidence 99% (alpha=0.01): Average Interval Width = 0.8367
-Confidence 95% (alpha=0.05): Average Interval Width = 0.6374
-Confidence 90% (alpha=0.1): Average Interval Width = 0.5206
-Confidence 80% (alpha=0.2): Average Interval Width = 0.3911
-Confidence 60% (alpha=0.4): Average Interval Width = 0.2474
+Confidence 99% (alpha=0.01): Empirical Coverage = 99.58% | Average Interval Width = 0.8823
+Confidence 95% (alpha=0.05): Empirical Coverage = 97.78% | Average Interval Width = 0.6620
+Confidence 90% (alpha=0.1): Empirical Coverage = 94.25% | Average Interval Width = 0.5190
+Confidence 80% (alpha=0.2): Empirical Coverage = 86.49% | Average Interval Width = 0.3915
+Confidence 60% (alpha=0.4): Empirical Coverage = 67.79% | Average Interval Width = 0.2408
 
 ==================================================
 Evaluating RECOLA - arousal - CLASS
 ==================================================
 
 --- Model: Linear ---
-Confidence 99% (alpha=0.01): Average Set Size = 4.70 classes
-Confidence 95% (alpha=0.05): Average Set Size = 4.23 classes
-Confidence 90% (alpha=0.1): Average Set Size = 3.87 classes
-Confidence 80% (alpha=0.2): Average Set Size = 3.22 classes
-Confidence 60% (alpha=0.4): Average Set Size = 2.22 classes
+Confidence 99% (alpha=0.01): Empirical Coverage = 98.89% | Average Set Size = 4.81 classes
+Confidence 95% (alpha=0.05): Empirical Coverage = 94.08% | Average Set Size = 4.35 classes
+Confidence 90% (alpha=0.1): Empirical Coverage = 86.46% | Average Set Size = 3.85 classes
+Confidence 80% (alpha=0.2): Empirical Coverage = 72.64% | Average Set Size = 3.07 classes
+Confidence 60% (alpha=0.4): Empirical Coverage = 51.37% | Average Set Size = 1.96 classes
 
 --- Model: MLP ---
-Confidence 99% (alpha=0.01): Average Set Size = 4.85 classes
-Confidence 95% (alpha=0.05): Average Set Size = 4.09 classes
-Confidence 90% (alpha=0.1): Average Set Size = 3.61 classes
-Confidence 80% (alpha=0.2): Average Set Size = 3.03 classes
-Confidence 60% (alpha=0.4): Average Set Size = 2.02 classes
+Confidence 99% (alpha=0.01): Empirical Coverage = 99.83% | Average Set Size = 4.81 classes
+Confidence 95% (alpha=0.05): Empirical Coverage = 96.47% | Average Set Size = 4.12 classes
+Confidence 90% (alpha=0.1): Empirical Coverage = 90.23% | Average Set Size = 3.60 classes
+Confidence 80% (alpha=0.2): Empirical Coverage = 78.84% | Average Set Size = 2.97 classes
+Confidence 60% (alpha=0.4): Empirical Coverage = 57.19% | Average Set Size = 1.99 classes
 
 --- Model: LSTM ---
-Confidence 99% (alpha=0.01): Average Set Size = 4.80 classes
-Confidence 95% (alpha=0.05): Average Set Size = 4.09 classes
-Confidence 90% (alpha=0.1): Average Set Size = 3.59 classes
-Confidence 80% (alpha=0.2): Average Set Size = 3.01 classes
-Confidence 60% (alpha=0.4): Average Set Size = 2.02 classes
+Confidence 99% (alpha=0.01): Empirical Coverage = 99.52% | Average Set Size = 4.82 classes
+Confidence 95% (alpha=0.05): Empirical Coverage = 94.87% | Average Set Size = 4.24 classes
+Confidence 90% (alpha=0.1): Empirical Coverage = 88.36% | Average Set Size = 3.75 classes
+Confidence 80% (alpha=0.2): Empirical Coverage = 76.38% | Average Set Size = 3.07 classes
+Confidence 60% (alpha=0.4): Empirical Coverage = 55.28% | Average Set Size = 2.03 classes
 
 ==================================================
 Evaluating RECOLA - valence - CLASS
 ==================================================
 
 --- Model: Linear ---
-Confidence 99% (alpha=0.01): Average Set Size = 4.87 classes
-Confidence 95% (alpha=0.05): Average Set Size = 4.62 classes
-Confidence 90% (alpha=0.1): Average Set Size = 4.27 classes
-Confidence 80% (alpha=0.2): Average Set Size = 3.73 classes
-Confidence 60% (alpha=0.4): Average Set Size = 2.68 classes
+Confidence 99% (alpha=0.01): Empirical Coverage = 99.55% | Average Set Size = 4.89 classes
+Confidence 95% (alpha=0.05): Empirical Coverage = 97.78% | Average Set Size = 4.65 classes
+Confidence 90% (alpha=0.1): Empirical Coverage = 93.45% | Average Set Size = 4.30 classes
+Confidence 80% (alpha=0.2): Empirical Coverage = 84.21% | Average Set Size = 3.72 classes
+Confidence 60% (alpha=0.4): Empirical Coverage = 63.49% | Average Set Size = 2.66 classes
 
 --- Model: MLP ---
-Confidence 99% (alpha=0.01): Average Set Size = 4.91 classes
-Confidence 95% (alpha=0.05): Average Set Size = 4.61 classes
-Confidence 90% (alpha=0.1): Average Set Size = 4.24 classes
-Confidence 80% (alpha=0.2): Average Set Size = 3.67 classes
-Confidence 60% (alpha=0.4): Average Set Size = 2.62 classes
+Confidence 99% (alpha=0.01): Empirical Coverage = 98.86% | Average Set Size = 4.89 classes
+Confidence 95% (alpha=0.05): Empirical Coverage = 95.70% | Average Set Size = 4.59 classes
+Confidence 90% (alpha=0.1): Empirical Coverage = 91.13% | Average Set Size = 4.23 classes
+Confidence 80% (alpha=0.2): Empirical Coverage = 81.82% | Average Set Size = 3.64 classes
+Confidence 60% (alpha=0.4): Empirical Coverage = 60.41% | Average Set Size = 2.53 classes
 
 --- Model: LSTM ---
-Confidence 99% (alpha=0.01): Average Set Size = 4.91 classes
-Confidence 95% (alpha=0.05): Average Set Size = 4.70 classes
-Confidence 90% (alpha=0.1): Average Set Size = 4.42 classes
-Confidence 80% (alpha=0.2): Average Set Size = 3.85 classes
-Confidence 60% (alpha=0.4): Average Set Size = 2.71 classes
+Confidence 99% (alpha=0.01): Empirical Coverage = 99.41% | Average Set Size = 4.94 classes
+Confidence 95% (alpha=0.05): Empirical Coverage = 96.88% | Average Set Size = 4.73 classes
+Confidence 90% (alpha=0.1): Empirical Coverage = 92.69% | Average Set Size = 4.44 classes
+Confidence 80% (alpha=0.2): Empirical Coverage = 83.58% | Average Set Size = 3.88 classes
+Confidence 60% (alpha=0.4): Empirical Coverage = 63.80% | Average Set Size = 2.79 classes
 
 ==================================================
 Evaluating AGAIN - arousal - REG
 ==================================================
 
 --- Model: Linear ---
-Confidence 99% (alpha=0.01): Average Interval Width = 1.2286
-Confidence 95% (alpha=0.05): Average Interval Width = 0.9285
-Confidence 90% (alpha=0.1): Average Interval Width = 0.7913
-Confidence 80% (alpha=0.2): Average Interval Width = 0.6285
-Confidence 60% (alpha=0.4): Average Interval Width = 0.4506
+Confidence 99% (alpha=0.01): Empirical Coverage = 97.66% | Average Interval Width = 1.2405
+Confidence 95% (alpha=0.05): Empirical Coverage = 92.61% | Average Interval Width = 0.9229
+Confidence 90% (alpha=0.1): Empirical Coverage = 86.68% | Average Interval Width = 0.7833
+Confidence 80% (alpha=0.2): Empirical Coverage = 76.19% | Average Interval Width = 0.6270
+Confidence 60% (alpha=0.4): Empirical Coverage = 57.79% | Average Interval Width = 0.4493
 
 --- Model: MLP ---
-Confidence 99% (alpha=0.01): Average Interval Width = 1.3087
-Confidence 95% (alpha=0.05): Average Interval Width = 0.9477
-Confidence 90% (alpha=0.1): Average Interval Width = 0.7953
-Confidence 80% (alpha=0.2): Average Interval Width = 0.6270
-Confidence 60% (alpha=0.4): Average Interval Width = 0.4405
+Confidence 99% (alpha=0.01): Empirical Coverage = 98.15% | Average Interval Width = 1.3350
+Confidence 95% (alpha=0.05): Empirical Coverage = 92.72% | Average Interval Width = 0.9676
+Confidence 90% (alpha=0.1): Empirical Coverage = 86.55% | Average Interval Width = 0.8105
+Confidence 80% (alpha=0.2): Empirical Coverage = 76.71% | Average Interval Width = 0.6420
+Confidence 60% (alpha=0.4): Empirical Coverage = 57.27% | Average Interval Width = 0.4386
 
 --- Model: LSTM ---
-Confidence 99% (alpha=0.01): Average Interval Width = 1.3516
-Confidence 95% (alpha=0.05): Average Interval Width = 0.9788
-Confidence 90% (alpha=0.1): Average Interval Width = 0.8221
-Confidence 80% (alpha=0.2): Average Interval Width = 0.6479
-Confidence 60% (alpha=0.4): Average Interval Width = 0.4392
+Confidence 99% (alpha=0.01): Empirical Coverage = 97.89% | Average Interval Width = 1.2688
+Confidence 95% (alpha=0.05): Empirical Coverage = 92.23% | Average Interval Width = 0.9345
+Confidence 90% (alpha=0.1): Empirical Coverage = 86.02% | Average Interval Width = 0.7951
+Confidence 80% (alpha=0.2): Empirical Coverage = 75.98% | Average Interval Width = 0.6359
+Confidence 60% (alpha=0.4): Empirical Coverage = 56.75% | Average Interval Width = 0.4407
 
 ==================================================
 Evaluating AGAIN - arousal - CLASS
 ==================================================
 
 --- Model: Linear ---
-Confidence 99% (alpha=0.01): Average Set Size = 4.79 classes
-Confidence 95% (alpha=0.05): Average Set Size = 4.13 classes
-Confidence 90% (alpha=0.1): Average Set Size = 3.63 classes
-Confidence 80% (alpha=0.2): Average Set Size = 2.87 classes
-Confidence 60% (alpha=0.4): Average Set Size = 1.89 classes
+Confidence 99% (alpha=0.01): Empirical Coverage = 98.37% | Average Set Size = 4.78 classes
+Confidence 95% (alpha=0.05): Empirical Coverage = 93.70% | Average Set Size = 4.14 classes
+Confidence 90% (alpha=0.1): Empirical Coverage = 88.53% | Average Set Size = 3.65 classes
+Confidence 80% (alpha=0.2): Empirical Coverage = 78.24% | Average Set Size = 2.89 classes
+Confidence 60% (alpha=0.4): Empirical Coverage = 56.59% | Average Set Size = 1.90 classes
 
 --- Model: MLP ---
-Confidence 99% (alpha=0.01): Average Set Size = 4.76 classes
-Confidence 95% (alpha=0.05): Average Set Size = 4.14 classes
-Confidence 90% (alpha=0.1): Average Set Size = 3.57 classes
-Confidence 80% (alpha=0.2): Average Set Size = 2.80 classes
-Confidence 60% (alpha=0.4): Average Set Size = 1.75 classes
+Confidence 99% (alpha=0.01): Empirical Coverage = 98.66% | Average Set Size = 4.78 classes
+Confidence 95% (alpha=0.05): Empirical Coverage = 94.14% | Average Set Size = 4.15 classes
+Confidence 90% (alpha=0.1): Empirical Coverage = 89.17% | Average Set Size = 3.62 classes
+Confidence 80% (alpha=0.2): Empirical Coverage = 77.74% | Average Set Size = 2.78 classes
+Confidence 60% (alpha=0.4): Empirical Coverage = 57.92% | Average Set Size = 1.73 classes
 
 --- Model: LSTM ---
-Confidence 99% (alpha=0.01): Average Set Size = 4.78 classes
-Confidence 95% (alpha=0.05): Average Set Size = 4.18 classes
-Confidence 90% (alpha=0.1): Average Set Size = 3.59 classes
-Confidence 80% (alpha=0.2): Average Set Size = 2.85 classes
-Confidence 60% (alpha=0.4): Average Set Size = 1.78 classes
+Confidence 99% (alpha=0.01): Empirical Coverage = 98.84% | Average Set Size = 4.76 classes
+Confidence 95% (alpha=0.05): Empirical Coverage = 94.32% | Average Set Size = 4.20 classes
+Confidence 90% (alpha=0.1): Empirical Coverage = 88.77% | Average Set Size = 3.64 classes
+Confidence 80% (alpha=0.2): Empirical Coverage = 78.83% | Average Set Size = 2.90 classes
+Confidence 60% (alpha=0.4): Empirical Coverage = 57.76% | Average Set Size = 1.78 classes

@@ -1,18 +1,18 @@
-RECOLA_arousal_reg_Linear: CCC = 0.4393
-RECOLA_arousal_reg_MLP: CCC = 0.4093
-RECOLA_arousal_reg_LSTM: CCC = 0.4389
-RECOLA_arousal_class_Linear: Acc = 0.3201
-RECOLA_arousal_class_MLP: Acc = 0.3531
-RECOLA_arousal_class_LSTM: Acc = 0.3587
-RECOLA_valence_reg_Linear: CCC = 0.1882
-RECOLA_valence_reg_MLP: CCC = 0.2069
-RECOLA_valence_reg_LSTM: CCC = 0.2675
-RECOLA_valence_class_Linear: Acc = 0.2635
-RECOLA_valence_class_MLP: Acc = 0.2757
-RECOLA_valence_class_LSTM: Acc = 0.2719
-AGAIN_arousal_reg_Linear: CCC = 0.4249
-AGAIN_arousal_reg_MLP: CCC = 0.4417
-AGAIN_arousal_reg_LSTM: CCC = 0.4430
-AGAIN_arousal_class_Linear: Acc = 0.3730
-AGAIN_arousal_class_MLP: Acc = 0.3961
-AGAIN_arousal_class_LSTM: Acc = 0.3913
+RECOLA_arousal_reg_Linear: CCC = 0.4121 | MSE = 0.0340 | RMSE = 0.1845
+RECOLA_arousal_reg_MLP: CCC = 0.4157 | MSE = 0.0333 | RMSE = 0.1824
+RECOLA_arousal_reg_LSTM: CCC = 0.4239 | MSE = 0.0322 | RMSE = 0.1796
+RECOLA_arousal_class_Linear: Acc = 0.3479
+RECOLA_arousal_class_MLP: Acc = 0.3698
+RECOLA_arousal_class_LSTM: Acc = 0.3431
+RECOLA_valence_reg_Linear: CCC = 0.1754 | MSE = 0.0199 | RMSE = 0.1409
+RECOLA_valence_reg_MLP: CCC = 0.2330 | MSE = 0.0185 | RMSE = 0.1360
+RECOLA_valence_reg_LSTM: CCC = 0.2508 | MSE = 0.0247 | RMSE = 0.1571
+RECOLA_valence_class_Linear: Acc = 0.2562
+RECOLA_valence_class_MLP: Acc = 0.2767
+RECOLA_valence_class_LSTM: Acc = 0.2503
+AGAIN_arousal_reg_Linear: CCC = 0.4316 | MSE = 0.0615 | RMSE = 0.2480
+AGAIN_arousal_reg_MLP: CCC = 0.4417 | MSE = 0.0641 | RMSE = 0.2533
+AGAIN_arousal_reg_LSTM: CCC = 0.4432 | MSE = 0.0624 | RMSE = 0.2499
+AGAIN_arousal_class_Linear: Acc = 0.3726
+AGAIN_arousal_class_MLP: Acc = 0.3982
+AGAIN_arousal_class_LSTM: Acc = 0.3859
