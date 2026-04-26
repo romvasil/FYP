@@ -1,8 +1,9 @@
 import os
 import torch
 import numpy as np
+from sklearn.linear_model import Ridge
 from crepes import ConformalRegressor, ConformalClassifier
-from crepes.extras import hinge
+from crepes.extras import hinge, DifficultyEstimator
 from models import LinearBaseline, MLPBaseline, LSTMBaseline
 
 DATA_PATH = "DataSetsProcessed"
@@ -58,6 +59,7 @@ def evaluate_conformal():
             model_path = f"{MODELS_PATH}/{run_name}.pth"
             
             if not os.path.exists(model_path):
+                print(f"Skipping {model_name} - Model weights not found.")
                 continue
                 
             print(f"\n--- Model: {model_name} ---")
@@ -70,12 +72,22 @@ def evaluate_conformal():
             
             if task == 'reg':
                 residuals = y_cal - cal_preds
+                
+                X_cal_flat = X_cal.reshape(X_cal.shape[0], -1)
+                X_test_flat = X_test.reshape(X_test.shape[0], -1)
+                
+                difficulty_model = Ridge(alpha=1.0)
+                difficulty_model.fit(X_cal_flat, np.abs(residuals))
+                
+                sigmas_cal = np.abs(difficulty_model.predict(X_cal_flat)) + 1e-6 
+                sigmas_test = np.abs(difficulty_model.predict(X_test_flat)) + 1e-6
+                
                 cr = ConformalRegressor()
-                cr.fit(residuals=residuals)
+                cr.fit(residuals=residuals, sigmas=sigmas_cal)
                 
                 for alpha in ALPHAS:
                     conf_level = (1 - alpha) * 100
-                    intervals = cr.predict_int(test_preds, confidence=1 - alpha)
+                    intervals = cr.predict_int(test_preds, sigmas=sigmas_test, confidence=1 - alpha)
                     
                     avg_width = np.mean(intervals[:, 1] - intervals[:, 0])
                     coverage = np.mean((y_test >= intervals[:, 0]) & (y_test <= intervals[:, 1]))

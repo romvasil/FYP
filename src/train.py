@@ -45,7 +45,7 @@ def calculate_ccc(y_true, y_pred):
 def train_model(run_name, dataset, target, task, ModelClass):
     X_train, y_train, X_val, y_val = load_data(dataset, target, task)
     
-    input_dim = X_train.shape[1]
+    input_dim = X_train.shape[-1]
     output_dim = 1 if task == 'reg' else 5
     
     model = ModelClass(input_dim, output_dim).to(DEVICE)

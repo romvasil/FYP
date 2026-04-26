@@ -1,0 +1,19 @@
+AGAIN DATASET STATISTICS
+==================================================
+Total Rows: 487176
+
+Genre Distribution:
+Shooter         | Data Points: 162570   | Unique Players: 121
+Platformer      | Data Points: 162339   | Unique Players: 122
+Racing          | Data Points: 162267   | Unique Players: 119
+
+Arousal Distribution:
+count    487176.000000
+mean          0.464794
+std           0.290209
+min           0.000000
+25%           0.221311
+50%           0.453839
+75%           0.700000
+max           1.000000
+==================================================

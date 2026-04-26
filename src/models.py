@@ -1,13 +1,15 @@
 import torch
 import torch.nn as nn
 
+
 class LinearBaseline(nn.Module):
     def __init__(self, input_dim, output_dim):
         super().__init__()
         self.linear = nn.Linear(input_dim, output_dim)
 
     def forward(self, x):
-        return self.linear(x)
+        return self.linear(x[:, -1, :])
+
 
 class MLPBaseline(nn.Module):
     def __init__(self, input_dim, output_dim):
@@ -23,7 +25,8 @@ class MLPBaseline(nn.Module):
         )
 
     def forward(self, x):
-        return self.net(x)
+        return self.net(x[:, -1, :])
+
 
 class LSTMBaseline(nn.Module):
     def __init__(self, input_dim, output_dim, hidden_dim=64):
@@ -32,5 +35,5 @@ class LSTMBaseline(nn.Module):
         self.fc = nn.Linear(hidden_dim, output_dim)
 
     def forward(self, x):
-        out, _ = self.lstm(x.unsqueeze(1))
+        out, _ = self.lstm(x)
         return self.fc(out[:, -1, :])
