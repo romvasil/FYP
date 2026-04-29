@@ -18,7 +18,8 @@ Based on the required data pipeline and model architecture, the repository is st
 │   ├── process_data.py     # Data cleaning, windowing, and GroupShuffleSplit preprocessing
 │   ├── models.py           # PyTorch definitions for Linear, MLP, and LSTM architectures
 │   ├── train.py            # Model training loop, validation, and baseline metric logging
-│   └── conformal.py        # Conformal prediction evaluation (using the `crepes` library)
+│   └── conformal.py        # Conformal prediction evaluation (using the "crepes" library)
 ├── .gitignore              # Ignores raw data, virtual environments, and caches
 ├── baseline_results.txt    # Output logs for baseline model performance (CCC, Accuracy, MSE)
-└── requirements.txt        # Python dependencies
+├── cp_results.txt          # Output logs for Conformal prediction model performance (Empirical Coverage, Average Interval Width)
+└── inspect_data.txt        # Analysis of data distribution
