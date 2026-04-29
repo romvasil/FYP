@@ -1,4 +1,5 @@
-# Conformal Prediction for Affective Computing
+# Quantifying Uncertainty in Affect Modelling
+## Roman Vasilets
 
 This repository contains the source code for a Final Year Project (FYP) investigating the application of **Conformal Prediction** to quantify uncertainty in affective computing and emotion recognition models. 
 
